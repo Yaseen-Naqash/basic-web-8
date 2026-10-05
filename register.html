@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+    <h1>Create an Account</h1>
+
+    <form action="/register" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            <br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            <br><br>
+
+            <label for="birthDate">Birth Date:</label><br>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+
+            <input type="radio" id="preferNot" name="gender" value="prefer-not-to-say">
+            <label for="preferNot">Prefer not to say</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="3" maxlength="20">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="8">
+            <br><br>
+
+            <label for="passwordConfirm">Confirm Password:</label><br>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Re-enter your password" required minlength="8">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Terms &amp; Conditions</legend>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="/terms" target="_blank">Terms of Service</a></label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <p>Already have an account? <a href="/login">Log in here</a>.</p>
+
+</body>
+</html>

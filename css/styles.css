@@ -1,0 +1,23 @@
+.myTitle{
+    color: red;
+
+}
+.myButton{
+    color: white;
+    background-color: purple;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+    /* border: 3px solid red; */
+    text-decoration: none;
+    box-shadow: 0px 0px 15px 4px rgba(128, 0, 128, 0.42);
+    transition: all 0.5s;
+}   
+
+.myButton:hover{
+    background-color: rgb(34, 0, 128);
+    box-shadow: 0px 0px 3px 4px rgba(128, 0, 128, 0.42);
+
+
+}   
+
