@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <style>
+
+        :root{
+            --primary: #757b00; 
+            --secondary: white;
+            --accent: black;
+
+            --my-border: 3px solid white;
+
+        }
+
+        
+        body{
+            background-color: var(--primary);
+            color: white;
+        }
+        input{
+            background-color: var(--primary);
+            color: white;
+            outline: none;
+            border: var(--my-border);
+            padding: 6px 10px;
+            border-radius: 0px 8px 8px 8px;
+
+        }
+        label{
+            background-color: white;
+            color: rgb(0, 0, 46);
+            padding: 3px 10px;
+            border-radius: 8px 8px 0px 0px;
+
+        }
+
+        
+
+
+    </style>
 </head>
 <body>
 
@@ -14,20 +51,20 @@
         <fieldset>
             <legend>Personal Information</legend>
 
-            <label for="firstName">First Name:</label><br>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            <label class="mylabel" for="firstName">First Name:</label><br>
+            <input class="myinput" type="text" placeholder="Enter your first name" required>
             <br><br>
 
             <label for="lastName">Last Name:</label><br>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            <input type="text" placeholder="Enter your last name" required>
             <br><br>
 
             <label for="birthDate">Birth Date:</label><br>
-            <input type="date" id="birthDate" name="birthDate" required>
+            <input type="date" required>
             <br><br>
 
             <label>Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male" required>
+            <input type="radio" value="male" required>
             <label for="male">Male</label><br>
 
             <input type="radio" id="female" name="gender" value="female">

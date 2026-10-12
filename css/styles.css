@@ -1,23 +1,121 @@
-.myTitle{
-    color: red;
+
+:root{
+    --primary: #224248;
+    --secondary: #325E6A;
+    --secondary-two: #44A1A4;
+    --accent: #FF9A00;
+    --text-color: rgb(228, 228, 228);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
 
 }
-.myButton{
-    color: white;
-    background-color: purple;
 
-    padding: 6px 12px;
-    border-radius: 8px;
-    /* border: 3px solid red; */
+body{
+    background-color: var(--primary);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+a{
+    color: var(--text-color);
+}
+
+
+/* nav css */
+
+nav{
+    background-color: var(--secondary);
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+nav img{
+    width: 90px;
+    height: 90px;
+    
+}
+
+nav a{
+    font-size: xx-large;
     text-decoration: none;
-    box-shadow: 0px 0px 15px 4px rgba(128, 0, 128, 0.42);
-    transition: all 0.5s;
-}   
+    
+}
+.login-button{
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 6px 26px;
+    border-radius: 9888px;
+    font-weight: 900;
+}
+.links{
+    display: flex;
+    gap: 42px
 
-.myButton:hover{
-    background-color: rgb(34, 0, 128);
-    box-shadow: 0px 0px 3px 4px rgba(128, 0, 128, 0.42);
+}
+
+/* header css */
+header{
+    margin: 20px 0px;
+    width: 100%;
+}
+header img{
+    width: 100%;
+    height: 500px;
+}
+i{
+    color: var(--accent);
+    font-size: xx-large;
+}
+
+.why-us{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.why-us-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+
+}
+.why-us-box{
+    width: 350px;
+    height: 170px;
+    border: 3px solid var(--accent);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: 900;
+    font-size: x-large;
 
 
-}   
-
+}
