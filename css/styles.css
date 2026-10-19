@@ -123,6 +123,24 @@ i{
 
 }
 
+.floatingButton{
+    background-color: var(--secondary);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 8px 12px;
+    width: fit-content;
+    height: fit-content;
+
+    
+
+
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 9999;
+}
+
+
 /* product page */
 
 .card{
@@ -130,7 +148,6 @@ i{
     height: fit-content;
     border: 2px solid #44A1A4;
     border-radius: 18px;
-    margin-top: 100px;
     overflow: hidden;
     color: white;
 
@@ -241,4 +258,29 @@ i{
     right: 20px;
     font-size: x-large;
 
+}
+
+
+.products-holder{
+    width: 90%;
+    height: fit-content;
+    margin: 20px auto;
+    border-radius: 25px;
+    border: 3px solid var(--secondary-two);
+
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px,1fr));
+    place-items: center;
+    gap: 25px;
+    
+}
+
+.filters{
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid var(--secondary-two);
+    border-radius: 25px;
+    height: 200px;
 }
