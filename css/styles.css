@@ -7,13 +7,62 @@
     --text-color: rgb(228, 228, 228);
 }
 
+@font-face {
+    font-family: 'Teshrin';
+    src: url(../assets/fonts/TeshrinAR+LT-Bold.otf);
+}
+@font-face {
+    font-family: 'LaleZar';
+    src: url(../assets/fonts/Digi\ Lalezar\ Plus.otf);
+}
+
+@keyframes LogoAnimation {
+    0%{
+        rotate: 0deg;
+        opacity: 1;
+        
+
+    }
+    25%{
+        rotate: 15deg;
+        
+
+    }
+    50%{
+        rotate: 0deg;
+        opacity: 0.5;
+
+    }
+    75%{
+        rotate: -15deg;
+        
+    }
+    100%{
+        rotate: 0deg;
+        opacity: 1;
+    }
+     
+}
+
+
+h1,h2,h3,h5,h6,h4{
+    font-family: 'Teshrin';
+}
+
+a,p,span,strong{
+    font-family: 'LaleZar';
+}
+
+
 *{
+
     margin: 0px;
     padding: 0px;
 
     box-sizing: border-box;
 
 }
+
 
 body{
     background-color: var(--primary);
@@ -26,6 +75,7 @@ body{
 
     position: relative;
     height: 500vh;
+    width: 100%;
 
 }
 
@@ -52,6 +102,8 @@ nav{
 nav img{
     width: 90px;
     height: 90px;
+    animation: LogoAnimation 1s;
+
     
 }
 
@@ -77,10 +129,19 @@ nav a{
 header{
     margin: 20px 0px;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+header a{
+    width: 100%;
 }
 header img{
-    width: 100%;
+    margin: 0px auto;  ;
+    width: 90%;
     height: 500px;
+    border-radius: 25px;
 }
 i{
     color: var(--accent);
@@ -284,3 +345,4 @@ i{
     border-radius: 25px;
     height: 200px;
 }
+
