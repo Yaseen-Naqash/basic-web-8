@@ -346,3 +346,69 @@ i{
     height: 200px;
 }
 
+
+/* modal */
+.modal{
+    width: 450px;
+    height: 550px;
+    background-color: var(--primary);
+    border: 3px solid var(--secondary-two);
+    border-radius: 25px;
+
+    position: fixed;
+
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 15px;
+
+
+    /* display: none; */
+    padding: 20px;
+
+}
+.modal input{
+    direction: rtl;
+    padding: 0px 15px;
+    font-size: x-large;
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary);
+    border: 3px solid var(--secondary-two);
+    border-radius: 18px;
+    color: var(--text-color);
+    outline: none;
+    
+
+}
+
+.modal input:focus{
+    outline: 6px solid var(--secondary-two);
+}
+
+.modal button{
+        width: 100%;
+    height: 45px;
+    background-color: var(--primary);
+    border: 3px solid var(--secondary-two);
+    border-radius: 18px;
+    color: var(--text-color);
+    font-size: x-large;
+}
+
+.modal strong{
+
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 3px solid var(--secondary-two);
+
+
+
+}
+

@@ -94,10 +94,13 @@ for(i=1; i<=rows ; i++){
 
 row_spaces = '';
 row_stars = '';
+
 for(i=1; i<=rows ; i++){
+
     for(j=1; j<=rows-i ; j++){
         row_spaces+=' ';
     }
+
     for(j=1; j<=i*2-1 ; j++){
         row_stars+='*';
     }
@@ -105,3 +108,7 @@ for(i=1; i<=rows ; i++){
     row_spaces = '';
     row_stars = '';
 }
+
+
+
+
