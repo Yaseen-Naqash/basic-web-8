@@ -110,5 +110,17 @@ for(i=1; i<=rows ; i++){
 }
 
 
+function toggle_modal(){
+    console.log('test')
+    document.getElementById('overlay').classList.toggle('active')
+    document.getElementById('modal').classList.toggle('side-bar-open')
+}
+
+function toggle_nav(){
+    console.log('test')
+    document.getElementById('nav').classList.toggle('nav-open')
+}
+
+
 
 
