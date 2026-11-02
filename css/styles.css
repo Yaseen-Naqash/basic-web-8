@@ -348,18 +348,31 @@ i{
 
 
 /* modal */
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.594);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+}
 .modal{
+
     width: 450px;
-    height: 550px;
+    height: fit-content;
     background-color: var(--primary);
     border: 3px solid var(--secondary-two);
     border-radius: 25px;
 
     position: fixed;
 
-    top: 50px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 10px 15px rgba(0, 0, 0, 0.355);
 
 
     display: flex;
@@ -411,4 +424,13 @@ i{
 
 
 }
-
+.modal a{
+    color: var(--secondary-two);
+}
+.row{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+}
