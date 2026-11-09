@@ -125,3 +125,32 @@ document.getElementById('logo').addEventListener('mouseenter', toggle_nav)
 document.getElementById('logo').addEventListener('mouseout', toggle_nav)
 
 
+
+
+function toggle_contact(){
+
+    document.getElementById('contact').classList.toggle('active')
+    document.getElementById('overlay').classList.toggle('active')
+}
+
+
+
+counter = 0;
+max = document.querySelectorAll('.slider a').length
+function goIndex(index){
+    document.getElementById('slider').style.transform = `translateX(-${index*100}vw)`
+}
+function next(){
+    counter++;
+    counter = counter % max;
+    goIndex(counter)
+}
+function prev(){
+    counter--;
+    counter = (counter + max) % max;
+    goIndex(counter);
+}
+
+setInterval(next,5000)
+// setTimeout(next(),5000)
+
