@@ -121,6 +121,7 @@ function toggle_nav(){
     document.getElementById('nav').classList.toggle('nav-open')
 }
 
-
+document.getElementById('logo').addEventListener('mouseenter', toggle_nav)
+document.getElementById('logo').addEventListener('mouseout', toggle_nav)
 
 

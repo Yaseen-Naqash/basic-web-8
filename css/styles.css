@@ -5,6 +5,10 @@
     --secondary-two: #44A1A4;
     --accent: #FF9A00;
     --text-color: rgb(228, 228, 228);
+    --border: 3px solid var(--secondary-two);
+
+
+
 }
 
 @font-face {
@@ -209,6 +213,7 @@ i{
     padding: 8px 12px;
     width: fit-content;
     height: fit-content;
+    cursor: pointer;
 
     
 
@@ -217,9 +222,12 @@ i{
     bottom: 50px;
     left: 50px;
     z-index: 9999;
+    transition: all 0.5s;
 }
 
-
+.floatingButton:hover{
+    background-color: #44A1A4;
+}
 /* product page */
 
 .card{
@@ -368,7 +376,7 @@ i{
 /* modal */
 
 .modal-overlay{
-    background-color: rgba(0, 0, 0, 0.594);
+    background-color: rgba(0, 0, 0, 0.50);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -458,11 +466,14 @@ i{
 
 
 
-.active{
 
-    display: flex;
-}
 .side-bar-open{
     left: 0;
 
+}
+
+
+.active{
+
+    display: flex;
 }
